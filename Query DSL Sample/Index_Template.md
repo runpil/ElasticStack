@@ -1,3 +1,8 @@
+# 템플릿 리스트
+```json
+GET _cat/templates?v&s=name
+```
+# 템플릿 생성
 ```json
 PUT _template/db-perfmon-template
 {
@@ -85,4 +90,9 @@ PUT _template/db-perfmon-template
     }
   }
 }
+```
+
+# 템플릿 확인
+```json
+GET _template/db-perfmon-template
 ```
