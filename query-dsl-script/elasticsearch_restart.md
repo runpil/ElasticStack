@@ -22,13 +22,14 @@ kill `cat es.pid`
 ```
 
 ## 4. 필요한 작업 진행
-  ex) jvm heap size 변경
+  - ex) jvm heap size 변경
 
-## 5. 중단한 노드 재시작
+## 5. 중단한 노드 재시작 및 상태확인
+#### 노드 재시작
 ```bash
 bin/elasticsearch -d -p es.pid
 ```
-  - 아래 명령으로 노드가 정상적으로 실행됐는지 확인
+#### 노드가 정상적으로 실행됐는지 확인
 ```json
 GET _cat/nodex
 ```
